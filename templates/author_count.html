@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Author Post Count</title>
+</head>
+<body>
+<p>
+    <table border="1">
+    <tr>
+        <th> Author </th>
+        <th> Post Count </th>
+    </tr>
+    {% for x,i in data %}
+    <tr>
+        <td>{{ x['name'] }}</td>
+        <td>{{ i }}</td>
+    </tr>
+    {% endfor %}
+    </table>
+</p>
+</body>
+</html>
