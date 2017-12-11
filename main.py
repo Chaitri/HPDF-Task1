@@ -30,7 +30,7 @@ def set_cookie():
     resp.set_cookie('age',value="21")
     return resp
 
-@app.route('/getcookie')
+@app.route('/getcookies')
 def get_cookie():
     uname = request.cookies.get('name')
     uage = request.cookies.get('age')
